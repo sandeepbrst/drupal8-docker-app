@@ -46,7 +46,7 @@ ADD ./files/xdebug.ini /etc/php5/mods-available/xdebug.ini
 RUN a2ensite 000-default ; a2enmod rewrite vhost_alias
 
 # Drupal new version, clean cache
-ADD https://updates.drupal.org/release-history/drupal/8.x /tmp/latest.xml
+ADD https://updates.drupal.org/release-history/drupal/8.5.x /tmp/latest.xml
 
 # Retrieve drupal & adminer
 RUN /bin/bash -t \
